@@ -174,3 +174,11 @@
 +Player 2 key: (example: L)
 +Make sure the game updates live on the screen (press count increasing).
 +After the game ends, show a “Play Again” option.
+
+# 2025-12-01 07:05:20.075524
++add a game visual with a simple User Interface, like a chicken and a road.
++make it so that the chicker move a distance that corresponds how many the player press the button. 
+
+# 2025-12-01 07:05:20.075846
++add a game visual with a simple User Interface, like a chicken and a road.
++make it so that the chicker move a distance that corresponds how many the player press the button. 
