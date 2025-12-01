@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import Button from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export default function ChickenRace() {
   const [count1, setCount1] = useState(0);
@@ -32,7 +32,7 @@ export default function ChickenRace() {
     }
     const timer = setInterval(() => setTimeLeft((t) => t - 1), 1000);
     return () => clearInterval(timer);
-  }, [running, timeLeft]);
+  }, [running, timeLeft, endGame]);
 
   const startGame = () => {
     setCount1(0);
