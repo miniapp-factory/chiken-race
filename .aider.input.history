@@ -138,3 +138,39 @@
 
 # 2025-12-01 06:14:41.492631
 +apply changes
+
+# 2025-12-01 06:32:08.816715
++I want to create a simple 2-player “Chicken Race” game.
++The game has two players.
++Each player has their own key/button to press rapidly.
++The player who presses their button faster wins.
++
++The game should:
++Start when I press a “Start” button or when the program runs.
++Count how many times each player presses their button.
++Stop after a set time (example: 5 seconds)
++Show who won and the press count of both players.
++Make the game visual with a simple UI.
++Add instructions on how players should press the buttons:
++Player 1 key: (example: A)
++Player 2 key: (example: L)
++Make sure the game updates live on the screen (press count increasing).
++After the game ends, show a “Play Again” option.
+
+# 2025-12-01 06:32:08.818171
++I want to create a simple 2-player “Chicken Race” game.
++The game has two players.
++Each player has their own key/button to press rapidly.
++The player who presses their button faster wins.
++
++The game should:
++Start when I press a “Start” button or when the program runs.
++Count how many times each player presses their button.
++Stop after a set time (example: 5 seconds)
++Show who won and the press count of both players.
++Make the game visual with a simple UI.
++Add instructions on how players should press the buttons:
++Player 1 key: (example: A)
++Player 2 key: (example: L)
++Make sure the game updates live on the screen (press count increasing).
++After the game ends, show a “Play Again” option.
