@@ -24,6 +24,13 @@ export default function ChickenRace() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
+  const endGame = () => {
+    setRunning(false);
+    if (count1 > count2) setWinner("Player 1 (A)");
+    else if (count2 > count1) setWinner("Player 2 (L)");
+    else setWinner("Tie");
+  };
+
   useEffect(() => {
     if (!running) return;
     if (timeLeft <= 0) {
@@ -32,7 +39,7 @@ export default function ChickenRace() {
     }
     const timer = setInterval(() => setTimeLeft((t) => t - 1), 1000);
     return () => clearInterval(timer);
-  }, [running, timeLeft, endGame]);
+  }, [running, timeLeft]);
 
   const startGame = () => {
     setCount1(0);
@@ -42,12 +49,6 @@ export default function ChickenRace() {
     setRunning(true);
   };
 
-  const endGame = () => {
-    setRunning(false);
-    if (count1 > count2) setWinner("Player 1 (A)");
-    else if (count2 > count1) setWinner("Player 2 (L)");
-    else setWinner("Tie");
-  };
 
   const resetGame = () => {
     setCount1(0);
