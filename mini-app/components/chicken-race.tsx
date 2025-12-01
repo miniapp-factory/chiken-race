@@ -64,6 +64,10 @@ export default function ChickenRace() {
       <div className="text-sm text-muted-foreground">
         Press <span className="font-mono">A</span> for Player 1, <span className="font-mono">L</span> for Player 2
       </div>
+      <div className="relative h-48 w-full bg-gray-200 overflow-hidden mt-4">
+        <div className="absolute top-0 left-0 h-12 w-12 bg-yellow-500 rounded-full" style={{ transform: `translateX(${count1 * 10}px)` }} />
+        <div className="absolute bottom-0 left-0 h-12 w-12 bg-red-500 rounded-full" style={{ transform: `translateX(${count2 * 10}px)` }} />
+      </div>
       <div className="flex gap-8">
         <div className="text-center">
           <div className="text-4xl">{count1}</div>
